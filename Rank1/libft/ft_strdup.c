@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sraiha <sraiha.student@hive.fi>            #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024-11-01 13:27:44 by sraiha            #+#    #+#             */
-/*   Updated: 2024-11-01 13:27:44 by sraiha           ###   ########.fi       */
+/*   Created: 2024-11-01 15:48:40 by sraiha            #+#    #+#             */
+/*   Updated: 2024-11-01 15:48:40 by sraiha           ###   ########.fi       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_strncmp(const char *s1, const char *s2, size_t n)
-{   
-    size_t  i;
+char    *ft_strdup(const char *s)
+{
+    size_t i;
+    char *cpy;
 
     i = 0;
-    while((*s1 && (*s1 == *s2)) && i < n)
-    {
-        s1++;
-        s2++;
+    cpy = (char *)malloc(ft_strlen(s) + 1);
+    if (!cpy)
+        return (NULL);
+    while(s[i] != '\0')
+    {   
+        cpy[i] = s[i];
         i++;
     }
-    return (*s1 - *s2);
+    cpy[i] = '\0';
+    return (cpy);
 }
