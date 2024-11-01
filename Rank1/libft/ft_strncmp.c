@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sraiha <sraiha@student.hive.fi>            +#+  +:+       +#+        */
+/*   By: sraiha <sraiha.student@hive.fi>            #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/30 12:33:49 by sraiha            #+#    #+#             */
-/*   Updated: 2024/10/30 12:39:06 by sraiha           ###   ########.fr       */
+/*   Created: 2024-11-01 13:27:44 by sraiha            #+#    #+#             */
+/*   Updated: 2024-11-01 13:27:44 by sraiha           ###   ########.fi       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-#define LIBFT_H
+#include "libft.h"
 
-// #include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-
-void    *ft_memset(void *s, int c, size_t n);
-size_t      ft_strlen(const char *s);
-
-#endif
+int     ft_strncmp(const char *s1, const char *s2, size_t n)
+{
+    
+}
