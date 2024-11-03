@@ -39,12 +39,3 @@ char    *ft_strtrim(char const *s1, const char *set)
     res = ft_substr(start, 0, end - start);
     return (res);
 }
-
-int main(){
-    char set[] = "123";
-    char toTrim[] = "123hello world123";
-    char *res;
-
-    res = ft_strtrim(toTrim, set);
-    printf("%s", res);
-}
